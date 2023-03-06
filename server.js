@@ -4,7 +4,7 @@ const app = express();
 
 const mongoose = require('mongoose')
 
-const a_c = require("../backend/controller/a_controller") // to test specific controller
+const a_c = require("../backend/src/controller/a_controller") // to test specific controller
 
 require('dotenv').config()
 
@@ -20,7 +20,7 @@ const corsOption ={
 
 app.use(cors(corsOption))
 
-const Schema= require("./router/router")
+const Schema= require("./src/router/router")
 
 app.use("/api", Schema)
 
