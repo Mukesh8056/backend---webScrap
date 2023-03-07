@@ -4,7 +4,7 @@ const app = express();
 
 const mongoose = require('mongoose')
 
-const a_c = require("../backend/src/controller/a_controller") // to test specific controller
+// const a_c = require("../backend/src/controller/a_controller") // to test specific controller
 
 require('dotenv').config()
 
@@ -24,7 +24,7 @@ const Schema= require("./src/router/router")
 
 app.use("/api", Schema)
 
-app.get("/demo",a_c) // to test and get console
+// app.get("/demo",a_c) // to test and get console
 
 app.use (express.json())
 
